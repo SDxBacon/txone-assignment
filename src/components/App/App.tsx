@@ -24,6 +24,7 @@ function App() {
       colorStyle={{ defaultValue: colorStyle }}
       useCSSBaseline // apply` CSS reset and base styles
     >
+      {/* 一個 Flexbox 把 Menu 元件包起來置中 */}
       <Flex height='inherit' alignItems='center' justifyContent='center'>
         <Menu>
           {/* MenuButton with Avatar */}
@@ -44,7 +45,6 @@ function App() {
             </MenuItem>
           </MenuList>
         </Menu>
-        {/* </DemoSection> */}
       </Flex>
     </TonicProvider>
   );
