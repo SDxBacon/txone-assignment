@@ -24,7 +24,7 @@ const AvatarMenuButton = () => {
   const [colorMode] = useColorMode();
   const [colorStyle] = useColorStyle({ colorMode }) as any;
   return (
-    <MenuToggle>
+    <MenuToggle data-testid='avatar-menu-button'>
       <Avatar
         backgroundColor={colorStyle.background.secondary}
         color={colorStyle.color.secondary}
